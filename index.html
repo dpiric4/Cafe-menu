@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dobrodošli u vaš Caffe bar Public</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Tvoj CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-overlay">
+
+    <!-- Welcome Header -->
+    <div id="welcome-header">
+      <h1>Dobrodošli u vaš Caffe bar Public</h1>
+    </div>
+
+    <!-- Sticky Header za kategorije -->
+    <div id="sticky-header" class="d-none">
+      <button class="back-btn" onclick="showCategoryList()">← Nazad</button>
+      <h2 id="sticky-title" class="m-0"></h2>
+    </div>
+
+    <!-- Sadržaj -->
+    <div class="container py-5">
+      <h3 id="menu-title" class="menu-heading">☕ MENI:</h3>
+      <div id="category-buttons"></div>
+      <div id="menu-container" style="display: none;"></div>
+    </div>
+
+  </div>
+
+  <!-- Tvoj JS -->
+  <script src="script.js"></script>
+</body>
+</html>
