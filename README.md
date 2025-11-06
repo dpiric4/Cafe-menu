@@ -1,2 +1,2 @@
 # Cafe-menu
-https://decor-art.netlify.app/
+https://caffe-bar-public.netlify.app/
