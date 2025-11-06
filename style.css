@@ -1,0 +1,181 @@
+/* Opšti stil */
+body {
+  background: url('kafa.webp') no-repeat center center fixed;
+  background-size: cover;
+  color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+/* Pozadinski overlay */
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  padding: 0;
+}
+
+/* Welcome Header */
+#welcome-header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background: rgba(33, 37, 41, 0.8);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+#welcome-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+}
+
+/* Sticky Header za kategorije */
+#sticky-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  margin: 0;
+  padding: 12px 20px;
+  background: rgba(33, 37, 41, 0.8);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.back-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 1rem;
+  padding: 6px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  min-width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sticky-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin-left: 12px;
+  white-space: nowrap;
+}
+
+/* Naslov MENI */
+.menu-heading {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* Dugmad za kategorije */
+#category-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 10px;
+}
+
+/* Button kategorije */
+.btn-category {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  height: 160px;
+  font-size: 1rem;
+}
+
+.btn-category:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-category img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.btn-category span {
+  padding-top: 8px;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Kontejner za proizvode */
+#menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Proizvodi */
+.menu-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.menu-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.menu-item h5 {
+  color: white;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.menu-item p {
+  color: #00ff00;
+  margin: 3px 0 0;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .back-btn {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    min-width: 70px;
+  }
+
+  #sticky-title {
+    font-size: 1.2rem;
+  }
+}
